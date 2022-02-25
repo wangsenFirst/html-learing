@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            border: 0;
+        }
+        div {
+            background-color: antiquewhite;
+        }
+        [class] {
+            background-color: yellowgreen;
+        }
+        .yuan {
+            background-color: green;
+            width: 200px;
+            height: 100px;
+            margin: 0px auto;
+            border-radius: 100px 100px 0px 0px;
+        }
+        .serach {
+            width: 950px;
+            height: 120px;
+            border: 1px solid #dedede;
+            margin: 10px auto;
+            background-color: #eceaed;
+            border-radius:15px;
+            box-shadow: 4px 11px 7px #bfbfbf,-4px 11px 7px #bfbfbf;
+        }
+        [type=text] {
+            width: 683px;
+            height: 86px;
+            margin: 17px;
+            border: 3px solid #cccccc;
+            border-radius: 4px;
+            font-size: 25px;
+            /* 缩进11px */
+            text-indent: 11px;
+        }
+        [type=submit] {
+            width: 200px;
+            height: 86px;
+            border: 1px solid #5ca3b4;
+            background-color: #00a1d6;
+            border-radius: 5px;
+            font-size: 23px;
+            color:  white;
+            /* 缩进11px */
+            text-indent: 11px;
+        }
+        input {
+            /* 清楚外边框的线 */
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="d1">div-111</div>
+    <div class="d2">div-222</div>
+    <div>div-333</div>
+    <p class="p1">p-111</p>
+    <p class="p2">p-222</p>
+    <p>p-333</p>
+
+    <div class="yuan"></div>
+    <form action="">
+    <!-- 搜索框 -->
+        <div class="serach">
+            <input type="text" placeholder="Search for CSs3, HTML5, jQuery..." name="search" list="list">
+            <input type="submit" value="GO">
+        </div>
+    </form>
+    <datalist id="list">
+        <option value="qwe"></option>
+        <option value="asd"></option>
+        <option value="zxc"></option>
+        <option value="rty"></option>
+        <option value="fgh"></option>
+        <option value="vbn"></option>
+        <option value="qwe"></option>
+    </datalist>
+</body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./iconfont/iconfont.css">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            border: 0;
+        }
+        .box {
+            width: 955px;
+            height: 1420px;
+            margin: 0px auto;
+            /* background-color: green; */
+            /* 弹性盒子  纵轴排列 */
+            display: flex; 
+            flex-direction: column;
+
+        }
+        header{
+            height: 124px;
+            background-color: #232939;
+            display: flex;
+            /* 字体颜色 */
+            color: white;
+        }
+        header i {
+            width: 118px;
+            height: 124px;
+            line-height: 124px;
+            text-align: center;
+            font-size: 48px;
+        }
+        header .iconfont{
+            /*设置图片大小 */
+            font-size: 48px;
+        }
+        header span {
+            width: 118px;
+            height: 124px;
+            line-height: 124px;
+            flex: 1;
+            font-size: 40px;
+        }
+
+        section{
+            /* 沾满空余部分 */
+            flex: 1;
+        }
+        .main {
+            height: 278px;
+            display: flex;
+            background-color: #232939;
+            /* 弹性和中块的位置   */
+            justify-content: space-around;
+            align-items: center;
+
+        }
+        .main div {
+            width: 120px;
+            height: 168px;
+            /* background-color: white; */
+            display: flex;
+            color: white;
+            /* 纵向排列 */
+            flex-direction: column;
+            /* 两端对齐 */
+            justify-content: space-between;
+        }
+        .main div i {
+            font-size: 110px;
+            text-align: center;
+        }
+        .main div span{
+            font-size: 32px;
+            text-align: center;
+        }
+        .list{
+            display: flex;
+            /* 设置弹性盒子可以折行 */
+            flex-wrap: wrap;
+            /* background-color: antiquewhite; */
+        }
+        .list div{
+            width: 25%;
+            height: 208px;
+            border: 1px solid gray;
+            background-color: white;
+            /* 怪异盒模型  特点：盒子的大小不会随着border变粗而变大 */
+            box-sizing: border-box;
+            display: flex;
+            /* 纵轴排列 */
+            flex-direction: column;
+            /* 设置主轴剧中 */
+            justify-content: center;
+        }
+        .list div i{
+            height: 77px;
+            line-height: 77px;
+            text-align: center;
+            font-size: 55px;
+        }
+        .list div span{
+            height: 61px;
+            line-height: 61px;
+            text-align: center;
+            font-size: 30px;
+            
+        }
+        .pic{
+            margin-top: 25px;
+        }
+        footer{
+            height: 128px;
+            background-color: antiquewhite;
+            display: flex;
+            color: #acadaf;
+            background-color: white;
+
+        }
+        /* 鼠标点击后 */
+        footer div:hover{
+            color: #06a9ee;
+        }
+        footer div{
+            text-align: center;
+            font-size: 55px;
+            display: flex;
+            flex-direction: column;
+            /* 主轴设置为中间 */
+            justify-content: center;
+            flex: 1;
+            color: rgb(47, 8, 119);
+        }
+        footer div .iconfont{
+            height: 66px;
+            font-size: 58px;
+        }
+        footer div span{
+            height: 36px;
+            line-height: 61px;
+            text-align: center;
+            font-size: 28px;
+            
+        }
+        /* https://www.iconfont.cn/  阿里巴巴矢量图标库 */
+    </style>
+</head>
+<body>
+    <div class="box">
+        <header>
+            <i class="iconfont icon-type"></i>
+            <span>账单</span>
+            <i class="iconfont icon-me"></i>
+            <i class="iconfont icon-search"></i>
+            <i class="iconfont icon-add1"></i>
+        </header>
+        <section>
+            <div class="main">
+                <div>
+                    <i class="iconfont icon-scan"></i>
+                    <span>扫一扫</span>
+                </div>
+                <div>
+                    <i class="iconfont icon-pay_collect"></i>
+                    <span>收付款</span>
+                </div>
+                <div>
+                    <i class="iconfont icon-travel"></i>
+                    <span>出行</span>
+                </div>
+                <div>
+                    <i class="iconfont icon-wallet"></i>
+                    <span>卡包</span>
+                </div>
+            </div>
+            <div class="list">
+                <div>
+                    <i class="iconfont icon-smail"></i>
+                    <span>卡包</span>
+                </div>
+                <div>
+                    <i class="iconfont icon-smail"></i>
+                    <span>卡包</span>
+                </div>
+                <div>
+                    <i class="iconfont icon-smail"></i>
+                    <span>卡包</span>
+                </div>
+                <div>
+                    <i class="iconfont icon-smail"></i>
+                    <span>卡包</span>
+                </div>
+                <div>
+                    <i class="iconfont icon-smail"></i>
+                    <span>卡包</span>
+                </div>
+                <div>
+                    <i class="iconfont icon-smail"></i>
+                    <span>卡包</span>
+                </div>
+                <div>
+                    <i class="iconfont icon-smail"></i>
+                    <span>卡包</span>
+                </div>
+                <div>
+                    <i class="iconfont icon-wallet"></i>
+                    <span>卡包</span>
+                </div>
+                <div>
+                    <i class="iconfont icon-wallet"></i>
+                    <span>卡包</span>
+                </div>
+                <div>
+                    <i class="iconfont icon-smail"></i>
+                    <span>卡包</span>
+                </div>
+                <div>
+                    <i class="iconfont icon-smail"></i>
+                    <span>卡包</span>
+                </div>
+                <div>
+                    <i class="iconfont icon-smail"></i>
+                    <span>卡包</span>
+                </div>
+            </div>
+            <div class="pic">
+                <img src="./img/支付宝.jpg" alt="" style="width: 100%; height: 100%;">
+            </div>
+        </section>
+        <footer>
+            <div>
+                <i class="iconfont icon-logo"></i>
+                <span>支付宝</span>  
+            </div>
+            <div>
+                <i class="iconfont icon-payment"></i>
+                <span>理财</span>  
+            </div>
+            <div>
+                <i class="iconfont icon-home"></i>
+                <span>生活</span>  
+            </div>
+            <div>
+                <i class="iconfont icon-me"></i>
+                <span>我的</span>  
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

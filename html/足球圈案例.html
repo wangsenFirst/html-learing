@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            border: 0;
+        }
+        html,body{
+            /* width: 100%; */
+            height: 100%;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+        }
+        header{
+            height: 44px;
+            background-color: #0cc440;
+            display: flex;
+            align-items: center; /*垂直方向居中*/
+            justify-content: center;  /*水平方向居中*/
+        }
+        header div{
+            width: 60px;
+            height: 25px;
+            text-align: center;
+            line-height: 25px;
+            color: white;
+            font-size: 12px;
+        }
+        /* header div 里面的第一个元素 */
+        header div:nth-child(1){
+            border-radius: 12px 0 0 12px;
+            background-color: #63d985;
+        }
+        header div:nth-child(2){
+            border-radius: 0 12px 12px 0;
+            background-color: #3dd066;
+        }
+        section{
+            display: flex;
+            flex: 1;
+        }
+        section ul{
+            display: flex;
+            list-style-type: none; 
+            width: 100%;
+            padding-inline-start: 0px;
+        }
+        
+        section ul li{
+            flex: 1;
+            text-align: center;
+            height: 35px;
+            line-height: 34px;
+            border-bottom: 1px solid #d9d9d9;
+        }
+        section ul li:hover{
+            border-bottom: 2px solid green;
+            color: green;
+        }
+        /* section .list{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        section .list>div{
+            margin-top: 4px;
+            width: 49%;
+            height: 10%;
+            border: 1px solid gray;
+        }
+        section ,list>div img{
+            width: 1%;
+        }  */
+        footer{
+            height: 44px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>热点</div>
+        <div>关注</div>
+    </header>
+    <section>
+        <ul>
+            <li>足球现场</li>
+            <li>足球生活</li>
+            <li>足球美女</li>
+        </ul>
+        <!-- <div class="list">
+            <div> <img src="https://tse1-mm.cn.bing.net/th/id/OIP-C.WFna_OH7VeEbKyg9L6ncawHaHa?pid=ImgDet&rs=1" alt="" style="width: 100%;"></div>
+            <div>123</div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div> -->
+    </section>
+    <footer></footer>
+</body>
+</html>
